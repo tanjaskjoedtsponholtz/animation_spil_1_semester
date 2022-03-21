@@ -8,6 +8,17 @@ img {
   box-sizing: border-box;
 }
 
+section {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
 /*______Custom properties for farver______*/
 html {
   --primary-color: #ff9b38;
@@ -20,18 +31,39 @@ h1 {
 }
 
 h2 {
-  font-family: "Secular One", sans-serif;
+  font-family: "Anton", sans-serif;
   color: var(--secondary-color);
+  font-size: 2rem;
 }
 
 h3 {
-  font-family: "Secular One", sans-serif;
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  color: var(--secondary-color);
+}
+
+p {
+  font-family: ;
+  margin-bottom: 0.5rem;
+}
+
+/*____SECTION ONE____*/
+
+.text_box {
+  border: 2px solid var(--secondary-color);
+  text-align: center;
+}
+
+/*____SECTOION TWO____*/
+#section_two {
+  background-color: var(--primary-color);
+  margin: 0;
 }
 
 @media (min-width: 600px) {
-  section_one {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  section {
+    margin: 3rem;
+    padding: 2rem;
   }
 }
 
