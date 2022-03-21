@@ -8,6 +8,25 @@ img {
   box-sizing: border-box;
 }
 
+#splash {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url(img/splash_billede.webp);
+  background-size: cover;
+  width: 100vw;
+  height: 40vh;
+  background-position: 52%;
+}
+
+h1 {
+  display: flex;
+  grid-row: 2/3;
+  font-size: 3.5rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
 /*______Custom properties for farver______*/
 html {
   --primary-color: #ff9b38;
@@ -29,6 +48,14 @@ h3 {
 }
 
 @media (min-width: 600px) {
+  #splash {
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
   section_one {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -36,4 +63,11 @@ h3 {
 }
 
 @media (min-width: 1200px) {
+  #splash {
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
 }
