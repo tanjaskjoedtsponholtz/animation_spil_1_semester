@@ -5,10 +5,35 @@ img {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*______Custom properties for farver______*/
 html {
   --primary-color: #ff9b38;
   --secondary-color: #0731e2;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-family: "Secular One", sans-serif;
+  color: var(--secondary-color);
+}
+
+h3 {
+  font-family: "Secular One", sans-serif;
+}
+
+@media (min-width: 600px) {
+  section_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
 }
