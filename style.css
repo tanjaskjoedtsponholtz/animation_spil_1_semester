@@ -1,11 +1,24 @@
-img {
+img,
+video {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+main {
+  margin: 20px;
 }
 
 #splash {
@@ -27,6 +40,123 @@ h1 {
   align-content: center;
 }
 
+/* Knapper */
+
+.button {
+  font-family: "Secular One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  place-content: center;
+  border-radius: 1.5rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  display: inline-flex;
+  width: 50%;
+  padding: 0.9rem 0 0.9rem 0;
+  color: #0731e2;
+  background-color: #ff9b38;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: white;
+  border: #ff9b38 solid;
+}
+
+/* Tekstboks */
+
+.tekstboks {
+  border: var(--secondary-color) 4px solid;
+  padding: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  text-align: center;
+}
+
+header a {
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  place-content: center;
+  border-radius: 0.5rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  display: inline-flex;
+  width: 140px;
+  padding: 0.9rem 0 0.9rem 0;
+  color: #0731e2;
+  background-color: #ff9b38;
+  text-decoration: none;
+}
+
+header a:hover {
+  background-color: white;
+  border: #ff9b38 solid;
+}
+
+/* section_one mobil */
+
+#section_one {
+  margin-bottom: 10px;
+}
+
+/* section_two mobil */
+
+#section_two {
+  margin-bottom: 20px;
+}
+
+#section_two h3 {
+  font-weight: bold;
+}
+
+/* Footer mobile first */
+
+footer p,
+footer h3 {
+  color: white;
+}
+
+footer {
+  background-color: #0731e2;
+  padding-left: 20px;
+}
+
+footer .col_1,
+.col_2,
+.col_3 {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+/* SoMe ikoner */
+footer a {
+  color: white;
+}
+
+.col_icon {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 /*______Custom properties for farver______*/
 html {
   --primary-color: #ff9b38;
@@ -39,15 +169,34 @@ h1 {
 }
 
 h2 {
-  font-family: "Secular One", sans-serif;
+  font-family: "Anton", sans-serif;
   color: var(--secondary-color);
 }
 
 h3 {
-  font-family: "Secular One", sans-serif;
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #0731e2;
+}
+
+p {
+  font-family: open-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4rem;
+}
+
+.button {
+  font-family: open-sans, sans-serif;
+  font-weight: bold;
 }
 
 @media (min-width: 600px) {
+  main {
+    margin: 150px;
+  }
+
   #splash {
     height: 60vh;
   }
@@ -56,9 +205,35 @@ h3 {
     font-size: 6rem;
   }
 
-  section_one {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  #section_two {
+    margin-bottom: 6rem;
+  }
+
+  /* Footer web */
+  footer {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  footer .col_1,
+  footer .col_2,
+  footer .col_3 {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  footer .col_1,
+  footer .col_2 {
+    border-right: solid 0.05rem white;
+    border-bottom: none;
+  }
+
+  /* Tekstboks */
+  .tekstboks {
+    padding: 40px;
+    margin-top: 20px;
+    font-size: 3rem;
   }
 }
 
@@ -69,5 +244,16 @@ h3 {
 
   h1 {
     font-size: 8rem;
+  }
+
+  #section_one,
+  #section_three {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  #invitation {
+    grid-column: 2/2;
   }
 }
