@@ -17,8 +17,12 @@ iframe {
   aspect-ratio: 16/9;
 }
 
-main {
-  margin: 20px;
+#section_one,
+#section_three {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #splash {
@@ -29,6 +33,7 @@ main {
   width: 100vw;
   height: 40vh;
   background-position: 52%;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -43,11 +48,12 @@ h1 {
 /* Knapper */
 
 .button {
-  font-family: "Secular One", sans-serif;
+  font-family: open-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
   place-content: center;
-  border-radius: 1.5rem;
+  text-align: center;
+  border-radius: 1rem;
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
   display: inline-flex;
@@ -64,42 +70,39 @@ h1 {
 .button:hover {
   background-color: white;
   border: #ff9b38 solid;
-}
-
-/* Tekstboks */
-
-.tekstboks {
-  border: var(--secondary-color) 4px solid;
-  padding: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 2rem;
+  cursor: pointer;
 }
 
 /* Header */
 
-header {
+header nav li {
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  padding: 0rem;
+}
+
+ul {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
 }
 
-header nav ul {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  text-align: center;
-}
+/* nav {
+  width: 1000px;
+  margin-inline: auto;
+} */
 
 header a {
-  font-family: open-sans, sans-serif;
-  font-weight: 400;
-  place-content: center;
-  border-radius: 0.5rem;
-  margin-bottom: 1.25rem;
-  margin-top: 1.25rem;
-  display: inline-flex;
+  justify-content: center;
+  display: flex;
   width: 140px;
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  border-radius: 1rem;
+  display: inline-flex;
   padding: 0.9rem 0 0.9rem 0;
   color: #0731e2;
   background-color: #ff9b38;
@@ -117,14 +120,25 @@ header a:hover {
   margin-bottom: 10px;
 }
 
+#section_one h2 {
+  margin-top: 20px;
+}
+
 /* section_two mobil */
 
 #section_two {
-  margin-bottom: 20px;
+  background-color: #ff9b38;
+  padding: 20px;
 }
 
 #section_two h3 {
   font-weight: bold;
+}
+
+/* Videotekst mobil */
+
+.videotekst {
+  margin-top: 20px;
 }
 
 /* Footer mobile first */
@@ -177,7 +191,7 @@ h3 {
   font-family: open-sans, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #0731e2;
+  color: #000000;
 }
 
 p {
@@ -193,8 +207,18 @@ p {
 }
 
 @media (min-width: 600px) {
-  main {
-    margin: 150px;
+  #section_one,
+  #section_three,
+  .video {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #section_two {
+    padding-right: 0px;
+    padding-left: 0;
   }
 
   #splash {
@@ -227,13 +251,6 @@ p {
   footer .col_2 {
     border-right: solid 0.05rem white;
     border-bottom: none;
-  }
-
-  /* Tekstboks */
-  .tekstboks {
-    padding: 40px;
-    margin-top: 20px;
-    font-size: 3rem;
   }
 }
 
