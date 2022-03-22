@@ -31,13 +31,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 20px 0 20px;
       }
 
       section {
         width: 100%;
         max-width: 600px;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
 
       a {
@@ -78,8 +79,35 @@
 
       h2 {
         font-family: "open sans", sans-serif;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-family: "open sans", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-family: "open sans", sans-serif;
         font-size: 1rem;
         margin-bottom: 1rem;
+      }
+
+      footer p {
+        font-family: "open sans", sans-serif;
+        font-size: 1rem;
+        color: white;
+        margin: 0.1rem;
+      }
+
+      .text {
+        text-transform: uppercase;
+      }
+
+      .face {
+        margin-top: 4rem;
       }
 
       iframe {
@@ -94,18 +122,27 @@
 
       footer {
         background-color: var(--secondary-color);
+        padding: 1rem;
       }
 
       @media (min-width: 600px) {
         .insta {
           width: 50%;
         }
+
+        section {
+          margin-bottom: 4rem;
+        }
+
+        h1 {
+          font-size: 4rem;
+        }
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Portfolio site</h1>
+      <h1>Portfolio</h1>
     </header>
     <main>
       <section id="kampagne">
@@ -116,7 +153,6 @@
             height="315"
             src="https://www.youtube.com/embed/R7yPdNGLj-w"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
@@ -130,7 +166,6 @@
             height="315"
             src="https://www.youtube.com/embed/TVch4tq2LGI"
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
@@ -139,16 +174,27 @@
       <section id="opslag">
         <h2>SoMe opslag</h2>
         <h3>Til Instagram</h3>
+        <p>
+          Instagram opslag hvor Grob giver en teaser for deres kampagne med et
+          billede fra kampagnevideoen. Kampagnen bliver delt på Facebook.
+        </p>
         <img
           class="insta"
           src="img/someopslaginstagram.png"
           alt="Instagram opslag"
         />
+        <h3 class="face">Til Facebook</h3>
+        <p>
+          Her kommer 14 sekunders kampagnen op, hvor folk kan like, dele og
+          kommentere - eller blot bare blive oplyst om Grob.
+        </p>
+        <img class="insta" src="img/facebook_some.png" alt="Facebook opslag" />
       </section>
-      <div class="button"><a href="index.html">Kampagne site</a></div>
     </main>
     <footer>
-      <p></p>
+      <p class="text">Tema 8: Kampagne for Grob</p>
+      <p>Portfolio</p>
+      <p>Julie, Alberte, Tanja, Sofie og Ida</p>
     </footer>
   </body>
 </html>
