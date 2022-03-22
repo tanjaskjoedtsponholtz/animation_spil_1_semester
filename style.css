@@ -90,11 +90,6 @@ ul {
   gap: 40px;
 }
 
-/* nav {
-  width: 1000px;
-  margin-inline: auto;
-} */
-
 header a {
   justify-content: center;
   display: flex;
