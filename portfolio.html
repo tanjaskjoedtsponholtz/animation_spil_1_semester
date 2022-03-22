@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Secular+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <style>
+      html {
+        --primary-color: #ff9b38;
+        --secondary-color: #0731e2;
+      }
+
+      img,
+      video {
+        width: 100%;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      main {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      a {
+        font-family: open-sans, sans-serif;
+        text-decoration: none;
+        font-size: 1rem;
+        color: black;
+        background-color: var(--primary-color);
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid white;
+      }
+
+      a:hover {
+        background-color: white;
+        border: 2px solid var(--primary-color);
+      }
+
+      .button {
+        display: grid;
+        place-content: center;
+        margin: 2rem;
+      }
+
+      header {
+        background-color: var(--primary-color);
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        font-family: "Anton", sans-serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      h2 {
+        font-family: "open sans", sans-serif;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16/9;
+      }
+
+      .insta {
+        width: 70%;
+      }
+
+      footer {
+        background-color: var(--secondary-color);
+      }
+
+      @media (min-width: 600px) {
+        .insta {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio site</h1>
+    </header>
+    <main>
+      <section id="kampagne">
+        <h2>Kampagne video</h2>
+        <div class="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/R7yPdNGLj-w"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="some">
+        <h2>SoMe video</h2>
+        <div class="some_video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/TVch4tq2LGI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section id="opslag">
+        <h2>SoMe opslag</h2>
+        <h3>Til Instagram</h3>
+        <img
+          class="insta"
+          src="img/someopslaginstagram.png"
+          alt="Instagram opslag"
+        />
+      </section>
+      <div class="button"><a href="index.html">Kampagne site</a></div>
+    </main>
+    <footer>
+      <p></p>
+    </footer>
+  </body>
+</html>
