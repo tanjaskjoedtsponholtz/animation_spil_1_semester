@@ -28,7 +28,7 @@ iframe {
 #splash {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  background-image: url(img/splash_billede.webp);
+
   background-size: cover;
   width: 100vw;
   height: 40vh;
